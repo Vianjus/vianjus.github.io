@@ -1,0 +1,8 @@
+body{
+  background-color: rgb(143, 140, 140);
+}
+
+div{
+  background-color: rgba(125, 123, 129, 0.5);
+  background-image: url(../favicon.ico);
+}
