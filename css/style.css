@@ -3,15 +3,15 @@
 
 
 body {
-    background: linear-gradient( 70deg, rgb(2, 46, 95) 15.26%, rgb(37, 131, 238) 99%) fixed;
+    background: linear-gradient( #533683, #9185A6) fixed;
     margin: 0px;
     min-height: 1200px;    
 }
 
 
 .container{
-    color: rgb(231, 231, 231);
-    background-color: rgb(4, 9, 32);
+    color: #212121;
+    background-color: #161616;;
     border-radius: 15px;
     margin: 30px;
     padding: 30px;
@@ -52,16 +52,10 @@ body {
     border-radius: 400px;
     border: 3px solid rgb(255, 255, 255);
     margin: 10px;
-    box-shadow: 0 0 15px rgb(15, 130, 184);
+    box-shadow: 0 0 15px #533683;
     min-width: 300px;
     min-height: 300px;
 }
-
-/*
-#profile-photo:hover{
-    object-fit: none;
-}
-*/
 
 .title h1{
     font-weight: 700;
@@ -99,7 +93,7 @@ body {
     align-items: center;
     color: rgb(231, 231, 231);
     list-style-type: none;
-    background: linear-gradient( 70deg, rgb(3, 39, 80) 15.26%, rgb(65, 154, 196) 99%);
+    background: linear-gradient( #533683, #62498d);
     background-repeat: no-repeat;
     border-radius: 15px;
     margin-top: 30px;
@@ -138,15 +132,13 @@ body {
 margin-left: 100px;
 margin-right: 100px;
 }
+
 a{
     color: inherit;
     text-decoration: none;
 }
 
-/*#test{
-    text-align: center;
-    list-style-type: none;
-    position: static;
-    float:right;
-    padding-left: 0px;
-}*/
+a:visited{
+    color: darkgrey;
+}
+
