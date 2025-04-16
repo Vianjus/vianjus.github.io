@@ -1,0 +1,301 @@
+/** Welcome to My Personal Page's Stylesheet
+    Feel free to inspire yourself and copy anything
+    on my design, just give me the credits =) **/
+
+:root {
+    --text-color: #242833;
+    --selection-background-color: #ffd6abfd;
+    --transparent-background-color: #ffd6ab8c;
+    --title-decoration-color: #ffae7d;
+    --dot-margin-color: #242833;
+    --link-color: #3F4F78;
+    --alt-link-color: #2e3b6e;
+    --link-selection-color: #bdc7dcfd;
+    --fst-heading-color: black;
+    --abbr-symbol-color: #FF5C64;
+    --abbr-focus-color: #fdd1d3;
+}
+
+/** Resets **/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/** Local Fonts **/
+
+/* Hurme No 4 — Obtained in FreeFonts.io */
+
+@font-face {
+    font-family: 'Hurme';
+    src: url('fonts/Hurmes/HurmeGeometricSans4\ Bold.otf') format("opentype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Hurme';
+    src: url('fonts/Hurmes/HurmeGeometricSans4.otf') format("opentype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Hurme';
+    src: url('fonts/Hurmes/HurmeGeometricSans4\ SemiBold.otf') format("opentype");
+    font-style: normal;
+    font-weight: 600;
+}
+
+/** Common Properties **/
+
+body {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.body-layout {
+    display: flex;
+    flex-direction: row-reverse;
+ /* gap: 8px; Won’t work in Safari, see footer margin */
+    width: 98%;
+    max-width: 900px;
+    align-items: center;
+    margin: 30px auto;
+}
+
+h1, h2, h3 {
+    font-family: 'Hurme', sans-serif;
+    font-weight: 700;
+}
+
+h1 { 
+    font-size: 3.052em;
+    display: inline-block;
+    color: var(--fst-heading-color);
+}
+
+h1::after {
+    content: "";
+    border-bottom: solid 15px var(--title-decoration-color);
+    position: relative;
+    bottom: 30px;
+    display: block;
+    z-index: -1;
+}
+
+h2 {
+    font-size: 2.441em;
+    margin-top: 0.6em;
+}
+
+p {
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.5;
+}
+
+em, .menu, .social-links {
+    font-family: 'Hurme', sans-serif;
+    font-size: 1.1em;
+}
+
+.page-container {
+    max-width: 900px;
+    width: 100%;
+    padding: 30px 10px;
+    padding-left: 40px;
+    border-left: 3px dotted var(--dot-margin-color);
+}
+
+::selection {
+    background-color: var(--selection-background-color);
+    color: black;
+}
+
+img::selection {
+    background-color: var(--transparent-background-color);
+}
+
+a::selection {
+    background-color: var(--link-selection-color);
+    text-decoration: none;
+}
+
+a, a:visited {
+    color: var(--link-color);
+}
+
+a:focus {
+    background-color: var(--alt-link-color);
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 0 0 3px var(--alt-link-color);
+    outline: none;
+}
+
+.skip-nav {
+    position: absolute;
+    left: -250px;
+    font-size: 1.3em;
+    padding: 10px 20px;
+    padding-left: 30px;
+    outline: none;
+    font-family: 'Hurme', sans-serif;
+    font-weight: 700;
+}
+
+.skip-nav:focus {
+    left: 0;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.menu, .social-links {
+    display: flex;
+    align-content: space-evenly;
+    list-style: none;
+    text-transform: lowercase;
+    line-height: 1.7;
+}
+
+.menu > li, .social-links > li {
+    margin-right: 15px;
+}
+
+.menu {
+    margin: 16pt 0;
+}
+
+em {
+    font-style: normal;
+    font-feature-settings: 'c2sc', 'smcp';
+    letter-spacing: 0.05em;
+}
+
+footer {
+    writing-mode: vertical-rl;
+    font-size: 0.75em;
+    transform: rotate(180deg);
+    margin: 0 8px 0 0;
+}
+
+
+/** Home Page **/
+
+.hang-punct {
+    text-indent: -0.41em;
+}
+
+.lara-quote {
+    margin-top: 12px;
+}
+
+.profile-photo {
+    width: 200px;
+    border-radius: 5px;
+}
+
+.about-me-container {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    row-gap: 0;
+    width: 100%;
+}
+
+.social-links {
+    grid-column: 2;
+}
+
+/** Portfolio Page **/
+
+.projects-list {
+    margin-top: 15px;
+    max-width: 700px;
+}
+
+.projects-list > li {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 1fr;
+    margin-bottom: 15px;
+}
+
+.projects-list > li > h3 {
+    text-align: right;
+    font-size: 1.1em;
+    font-weight: 600;
+}
+
+/** Tutoring Page **/
+.files-list{
+
+    margin-top: 0.5em;
+    list-style-type: none;
+    font-family: 'Source Serif Pro', serif;
+    line-height: 1.8;
+}
+
+/** Acessibility adjustments (media queries) **/
+
+@media only screen and (prefers-reduced-motion: no-preference){
+    
+    html {
+        scroll-behavior: smooth;
+    }
+}
+
+
+/** Responsiveness Adjustments **/
+
+@media only screen and (max-width: 660px){
+    .about-me-container {
+        display: flex;
+        gap: 0;
+        flex-direction: column;
+    }
+
+    .profile-photo {
+        margin-bottom: 1.5rem;
+    }
+
+    h1::after {
+        border: none;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+        margin-top: 1.5rem;
+    }
+
+    footer {
+        writing-mode: horizontal-tb;
+        transform: none;
+        margin: 16px 0 0 0;
+    }
+
+    .body-layout{
+        flex-direction: column;
+     /* gap: 20px; Won‘t work in Safari */
+    }
+
+    .projects-list > li {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .projects-list > li > h3 {
+        text-align: left;
+    }
+
+    abbr[title]:focus::after {
+        white-space: normal;
+    }
+
+    .files-list{
+        list-style-position: outside;
+        list-style-type: disc;
+    }
+}
