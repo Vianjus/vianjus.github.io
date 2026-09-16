@@ -5,65 +5,85 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>Portifólio</title>
+    <title>Portfólio | Vinícius Nunes</title>
+    
+    <!-- Script do Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Caso ainda tenha estilos próprios, pode manter este link -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
-    <body>
-        <div class="container">
-            <header class = 'profile'>
-                <img src = "./images/profile_photo.jpeg" id="profile-photo"/>
-                <div class="info-container">
-                    <div class = "title">
-                        <h1>Vinícius Nunes dos Anjos</h1>
-                        <h3>Exercícios para o Bacondev &#x1F437</h3>
-                    </div>
-                
-                    <div class = 'logos'>
-                        <a  href = 'https://github.com/Vianjus' target="_blank">
-                        <img src='https://i.pinimg.com/474x/d0/4f/ac/d04facd5c90ee22861bb85ef67e32ad6.jpg' id='logo'/>
-                        </a>
-                    </div>
-                </div>
-            </header>
+<body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex items-center justify-center p-4 md:p-10">
 
-            <main class = 'exercicios'>
-
-                <ul id = 'list-title'>HTML/CSS
-                <li><br></li>
-                <li><a href = "html-css/exercícios/ex001/index.html" target="_blank" >Exercício 01 - Meu Primeiro Exercício</a></li>
-                <li><a href = "html-css/exercícios/ex002/index.html" target="_blank">Exercício 02 - Parágrafos</a></li>
-                <li><a href = "html-css/exercícios/ex003/index.html" target="_blank">Exercício 03 - Teste com Imagens</a></li>
-                <li><a href = "html-css/exercícios/ex004/index.html" target="_blank">Exercício 04 - Teste de Favicon</a></li>
-                <li><a href = "html-css/exercícios/ex005/index.html" target="_blank">Exercício 05 - Hierarquia de Títulos</a></li>
-                <li><a href = "html-css/exercícios/ex006/html4.html" target="_blank">Exercício 06 - Meu site HTML 4</a></li>
-                <li><a href = "html-css/exercícios/ex006/html5.html" target="_blank">Exercício 06 - Exemplo de Semântica</a></li>
-                <li><a href = "html-css/exercícios/ex007/index.html" target="_blank">Exercício 07 - Formatação de Textos</a></li>
-                <li><a href = "html-css/exercícios/ex008/index.html" target="_blank">Exercício 08 - Outras formatações</a></li>
-                <li><a href = "html-css/exercícios/ex009/index.html" target="_blank">Exercício 09 - Listas</a></li>
-                <li><a href = "html-css/exercícios/ex010/index.html" target="_blank">Exercício 10 - Trabalhando com links</a></li>
-                <li><a href = "html-css/exercícios/ex011/index.html" target="_blank">Exercício 11 - Mídia em HTML5</a></li>
-                <li><a href = "html-css/exercícios/ex012/index.html" target="_blank">Exercício 12 - Videos com HTML5</a></li>
-                <li><a href = "html-css/exercícios/ex013/index.html" target="_blank">Exercício 13 - Estilos INLINE</a></li>
-                <li><a href = "html-css/exercícios/ex014/index.html" target="_blank">Exercício 14 - Estilos locais/internos</a></li>
-                <li><a href = "html-css/exercícios/ex015/index.html" target="_blank">Exercício 15 - Estilos externos</a></li>
-                </ul>
-
-                <ul id = 'list-title'>Desafios
-                    <li><br></li>
-                    <li><a href="html-css/exercícios/desafios/ds001/pg01.html" target="_blank" >Desafio 01</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds002/pg01.html" target="_blank" >Desafio 02</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds003/pag01.html" target="_blank" >Desafio 03</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds004/pg01.html" target="_blank" >Desafio 04</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds005/pg01.html" target="_blank" >Desafio 05</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds006/pg01.html" target="_blank" >Desafio 06</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds007/index.html" target="_blank" >Desafio 07</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds008/pag1.html" target="_blank" >Desafio 08</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds009/index.html" target="_blank" >Desafio 09</a></li>
-                    <li><a href="html/menu.html" target="_blank" >Memes</a></li>
-                    <li><a href="gradeCurricular/grade-dinamica/index.html" target="_blank" >Grade Curricular</a></li>
-                </ul>
-            </main>
+    <!-- Container Principal -->
+    <div class="max-w-5xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden">
+        
+        <!-- Cabeçalho (Profile) -->
+        <header class="bg-blue-600 text-white p-8 flex flex-col md:flex-row items-center gap-6">
+            <img src="./images/profile_photo.jpeg" alt="Foto de Perfil de Vinícius" 
+                 class="w-32 h-32 rounded-full border-4 border-blue-300 shadow-lg object-cover bg-white"/>
             
-        </div>
-    </body>
+            <div class="text-center md:text-left flex-1">
+                <h1 class="text-3xl font-bold mb-1">Vinícius Nunes dos Anjos</h1>
+                <h3 class="text-blue-200 text-lg font-medium">Exercícios para o Bacondev &#x1F437</h3>
+                
+                <div class="mt-4 flex justify-center md:justify-start">
+                    <a href="https://github.com/Vianjus" target="_blank" class="transition-transform transform hover:scale-110" title="Meu GitHub">
+                        <img src="https://i.pinimg.com/474x/d0/4f/ac/d04facd5c90ee22861bb85ef67e32ad6.jpg" alt="Logo GitHub" class="w-10 h-10 rounded-full border-2 border-white"/>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Seção Principal (Listas) -->
+        <main class="p-8 grid grid-cols-1 md:grid-cols-2 gap-10">
+
+            <!-- Coluna 1: HTML/CSS -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-2 inline-block">
+                    HTML/CSS
+                </h2>
+                <ul class="space-y-3">
+                    <li><a href="html-css/exercícios/ex001/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 01 - Meu Primeiro Exercício</a></li>
+                    <li><a href="html-css/exercícios/ex002/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 02 - Parágrafos</a></li>
+                    <li><a href="html-css/exercícios/ex003/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 03 - Teste com Imagens</a></li>
+                    <li><a href="html-css/exercícios/ex004/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 04 - Teste de Favicon</a></li>
+                    <li><a href="html-css/exercícios/ex005/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 05 - Hierarquia de Títulos</a></li>
+                    <li><a href="html-css/exercícios/ex006/html4.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 06 - Meu site HTML 4</a></li>
+                    <li><a href="html-css/exercícios/ex006/html5.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 06 - Exemplo de Semântica</a></li>
+                    <li><a href="html-css/exercícios/ex007/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 07 - Formatação de Textos</a></li>
+                    <li><a href="html-css/exercícios/ex008/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 08 - Outras formatações</a></li>
+                    <li><a href="html-css/exercícios/ex009/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 09 - Listas</a></li>
+                    <li><a href="html-css/exercícios/ex010/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 10 - Trabalhando com links</a></li>
+                    <li><a href="html-css/exercícios/ex011/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 11 - Mídia em HTML5</a></li>
+                    <li><a href="html-css/exercícios/ex012/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 12 - Videos com HTML5</a></li>
+                    <li><a href="html-css/exercícios/ex013/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 13 - Estilos INLINE</a></li>
+                    <li><a href="html-css/exercícios/ex014/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 14 - Estilos locais/internos</a></li>
+                    <li><a href="html-css/exercícios/ex015/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 15 - Estilos externos</a></li>
+                </ul>
+            </section>
+
+            <!-- Coluna 2: Desafios -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-orange-500 pb-2 inline-block">
+                    Desafios
+                </h2>
+                <ul class="space-y-3">
+                    <li><a href="html-css/exercícios/desafios/ds001/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 01</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds002/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 02</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds003/pag01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 03</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds004/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 04</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds005/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 05</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds006/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 06</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds007/index.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 07</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds008/pag1.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 08</a></li>
+                    <li><a href="html-css/exercícios/desafios/ds009/index.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 09</a></li>
+                    <li><a href="html/menu.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Memes</a></li>
+                    <li><a href="gradeCurricular/grade-dinamica/index.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Grade Curricular</a></li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
+</body>
 </html>
