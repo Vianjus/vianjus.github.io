@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <title>Portfólio | Vinícius Nunes</title>
+    <title>Currículo | Vinícius Nunes</title>
     
     <!-- Script do Tailwind CSS via CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -15,71 +15,102 @@
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans min-h-screen flex items-center justify-center p-4 md:p-10">
 
-    <!-- Container Principal -->
-    <div class="max-w-5xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden">
+    <!-- Container Principal do Currículo -->
+    <div class="max-w-4xl w-full bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-col md:flex-row">
         
-        <!-- Cabeçalho (Profile) -->
-        <header class="bg-blue-600 text-white p-8 flex flex-col md:flex-row items-center gap-6">
+        <!-- Barra Lateral (Perfil e Contato) -->
+        <aside class="bg-blue-600 text-white p-8 flex flex-col items-center md:w-1/3">
             <img src="./images/profile_photo.jpeg" alt="Foto de Perfil de Vinícius" 
-                 class="w-32 h-32 rounded-full border-4 border-blue-300 shadow-lg object-cover bg-white"/>
+                 class="w-40 h-40 rounded-full border-4 border-blue-300 shadow-lg object-cover bg-white mb-4"/>
             
-            <div class="text-center md:text-left flex-1">
-                <h1 class="text-3xl font-bold mb-1">Vinícius Nunes dos Anjos</h1>
-                <h3 class="text-blue-200 text-lg font-medium">Exercícios para o Bacondev &#x1F437</h3>
-                
-                <div class="mt-4 flex justify-center md:justify-start">
-                    <a href="https://github.com/Vianjus" target="_blank" class="transition-transform transform hover:scale-110" title="Meu GitHub">
-                        <img src="https://i.pinimg.com/474x/d0/4f/ac/d04facd5c90ee22861bb85ef67e32ad6.jpg" alt="Logo GitHub" class="w-10 h-10 rounded-full border-2 border-white"/>
-                    </a>
-                </div>
-            </div>
-        </header>
-
-        <!-- Seção Principal (Listas) -->
-        <main class="p-8 grid grid-cols-1 md:grid-cols-2 gap-10">
-
-            <!-- Coluna 1: HTML/CSS -->
-            <section>
-                <h2 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-blue-500 pb-2 inline-block">
-                    HTML/CSS
-                </h2>
-                <ul class="space-y-3">
-                    <li><a href="html-css/exercícios/ex001/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 01 - Meu Primeiro Exercício</a></li>
-                    <li><a href="html-css/exercícios/ex002/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 02 - Parágrafos</a></li>
-                    <li><a href="html-css/exercícios/ex003/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 03 - Teste com Imagens</a></li>
-                    <li><a href="html-css/exercícios/ex004/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 04 - Teste de Favicon</a></li>
-                    <li><a href="html-css/exercícios/ex005/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 05 - Hierarquia de Títulos</a></li>
-                    <li><a href="html-css/exercícios/ex006/html4.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 06 - Meu site HTML 4</a></li>
-                    <li><a href="html-css/exercícios/ex006/html5.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 06 - Exemplo de Semântica</a></li>
-                    <li><a href="html-css/exercícios/ex007/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 07 - Formatação de Textos</a></li>
-                    <li><a href="html-css/exercícios/ex008/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 08 - Outras formatações</a></li>
-                    <li><a href="html-css/exercícios/ex009/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 09 - Listas</a></li>
-                    <li><a href="html-css/exercícios/ex010/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 10 - Trabalhando com links</a></li>
-                    <li><a href="html-css/exercícios/ex011/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 11 - Mídia em HTML5</a></li>
-                    <li><a href="html-css/exercícios/ex012/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 12 - Videos com HTML5</a></li>
-                    <li><a href="html-css/exercícios/ex013/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 13 - Estilos INLINE</a></li>
-                    <li><a href="html-css/exercícios/ex014/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 14 - Estilos locais/internos</a></li>
-                    <li><a href="html-css/exercícios/ex015/index.html" target="_blank" class="text-blue-600 hover:text-blue-800 hover:underline font-medium transition-colors">Exercício 15 - Estilos externos</a></li>
+            <h1 class="text-2xl font-bold text-center mb-1">Vinícius Nunes dos Anjos</h1>
+            <h3 class="text-blue-200 text-md font-medium text-center mb-6">Desenvolvedor e Analista de Dados</h3>
+            
+            <!-- Contato -->
+            <div class="w-full mb-6">
+                <h4 class="text-lg font-bold border-b border-blue-400 pb-1 mb-3">Contato</h4>
+                <ul class="space-y-2 text-sm text-blue-100">
+                    <li>📍 Ouro Preto, MG</li>
+                    <li>📧 vinicius.anjos.nunes@gmail.com</li>
+                    <li>📱 (38) 99241-1612</li>
                 </ul>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="w-full">
+                <h4 class="text-lg font-bold border-b border-blue-400 pb-1 mb-3">Redes</h4>
+                <a href="https://github.com/Vianjus" target="_blank" class="flex items-center gap-3 text-blue-100 hover:text-white transition-colors" title="Meu GitHub">
+                    <img src="https://i.pinimg.com/474x/d0/4f/ac/d04facd5c90ee22861bb85ef67e32ad6.jpg" alt="Logo GitHub" class="w-8 h-8 rounded-full border border-white"/>
+                    <span>github.com/Vianjus</span>
+                </a>
+            </div>
+        </aside>
+
+        <!-- Seção Principal (Conteúdo) -->
+        <main class="p-8 md:w-2/3 space-y-8">
+            
+            <!-- Resumo Profissional -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-blue-500 pb-1 inline-block">Perfil Profissional</h2>
+                <p class="text-gray-600 leading-relaxed">
+                    Desenvolvedor focado na criação de interfaces web. Tenho facilidade em aprender novas tecnologias e busco minha primeira oportunidade (ou novos desafios) na área de programação para aplicar meus conhecimentos de forma prática e agregar valor à equipe.
+                </p>
             </section>
 
-            <!-- Coluna 2: Desafios -->
+            <!-- Habilidades -->
             <section>
-                <h2 class="text-2xl font-bold text-gray-700 mb-6 border-b-2 border-orange-500 pb-2 inline-block">
-                    Desafios
-                </h2>
-                <ul class="space-y-3">
-                    <li><a href="html-css/exercícios/desafios/ds001/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 01</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds002/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 02</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds003/pag01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 03</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds004/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 04</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds005/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 05</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds006/pg01.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 06</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds007/index.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 07</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds008/pag1.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 08</a></li>
-                    <li><a href="html-css/exercícios/desafios/ds009/index.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Desafio 09</a></li>
-                    <li><a href="html/menu.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Memes</a></li>
-                    <li><a href="gradeCurricular/grade-dinamica/index.html" target="_blank" class="text-orange-600 hover:text-orange-800 hover:underline font-medium transition-colors">Grade Curricular</a></li>
+                <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-blue-500 pb-1 inline-block">Habilidades Técnicas</h2>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Web</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Python</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">C++</span>
+                    <span class="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-medium">Git / GitHub</span>
+                </div>
+            </section>
+
+            <!-- Experiência -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-b-2 border-blue-500 pb-1 inline-block">Experiência Profissional</h2>
+                <div class="mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Diretor e Desenvolvedor</h3>
+                    <p class="text-blue-600 font-medium">Empresa Júnior Voluta SD</p>
+                    <p class="text-gray-500 text-sm mb-1">2022 - 2024</p>
+                    <p class="text-gray-600 text-sm">
+                        Desenvolvi páginas e aplicações web responsivas utilizando React, Nodejs e Wordpress. Fui Diretor de Projetos e de Gestão Interna. 
+                    </p>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-b-2 border-blue-500 pb-1 inline-block">Experiência Acadêmica</h2>
+                <div class="mb-4">
+                    <h3 class="text-lg font-bold text-gray-800">Iniciação Científica</h3>
+                    <p class="text-blue-600 font-medium">Desenho Hierárquico de Grafos com Minimização de Cruzamentos Utilizando o Método Parallel Tempering</p>
+                    <p class="text-gray-500 text-sm mb-1">2026</p>
+                    <p class="text-gray-600 text-sm">
+                        Fiz uma IC na área de otimização com o Professor Doutor Marco Antônio, para aplicação e teste de viabilidade do uso da metaheurística Parallel Tempering para o problema de OSCM. 
+                    </p>
+                </div>
+            </section>
+
+
+            <!-- Formação -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-4 border-b-2 border-blue-500 pb-1 inline-block">Formação Acadêmica</h2>
+                <div>
+                    <h3 class="text-lg font-bold text-gray-800">Ciência da Computação</h3>
+                    <p class="text-blue-600 font-medium">UFOP</p>
+                    <p class="text-gray-500 text-sm">Conclusão: Previsão 2027</p>
+                </div>
+            </section>
+
+            <!-- Interesses -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-700 mb-3 border-b-2 border-orange-500 pb-1 inline-block">Interesses</h2>
+                <ul class="list-disc list-inside text-gray-600 space-y-2 text-sm">
+                    <li><strong>Jogos:</strong> Acompanhamento do cenário competitivo (e-sports), jogos online e narrativos.</li>
+                    <li><strong>Academia:</strong> Prático regularmente, foco em ganho muscular e condicionamento físico.</li>
+                    <li><strong>Tecnologia:</strong> Acompanhar as últimas tendências e tecnologias de ponta de IA a jogos.</li>
                 </ul>
             </section>
 
